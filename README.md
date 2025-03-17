@@ -7,4 +7,4 @@ Authors:
 
 This study investigates the use of Variational Auto-Encoders to build a simulator that approximates the law of genuine observations.  Using both simulated and real data in scenarios involving counterfactuality, we discuss the general task of evaluating a simulator's quality, with a focus on comparisons of statistical properties and predictive performance.  While the simulator built from simulated data shows minor discrepancies, the results with real data reveal more substantial challenges.  Beyond the technical analysis, we reflect on the broader implications of simulator design, and consider its role in modeling reality.
 
-<img src="https://github.com/achambaz/draw_me_a_simulator/blob/main/figures/VAE_viz.jpg" alt="the VAE's architecture" width="600"/>
+<img src="https://github.com/achambaz/draw_me_a_simulator/blob/main/figures/VAE_viz.jpg" alt="the VAE's architecture" class="center" width="600"/>
