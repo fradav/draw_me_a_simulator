@@ -1,19 +1,3 @@
-@Preamble{ " \newcommand{\noop}[1]{} " }
-
-@Manual{R-reticulate,
-  title = {reticulate: Interface to Python},
-  author = {Kevin Ushey and JJ Allaire and Yuan Tang},
-  year = {2020},
-  note = {R package version 1.18},
-  url = {https://github.com/rstudio/reticulate},
-}
-
-@article{computo,
-  title = {Computo: reproducible computational/algorithmic contributions in statistics and machine learning},
-  author = {{Computo Team}},
-  year = {2020},
-}
-
 @Manual{R-base,
   title = {R: A Language and Environment for Statistical Computing},
   author = {{R Core Team}},
@@ -21,5 +5,805 @@
   address = {Vienna, Austria},
   year = {2020},
   url = {https://www.R-project.org/},
+}
+
+@Article{gtsummary,
+  author = {Daniel D. Sjoberg and Karissa Whiting and Michael Curry and Jessica A. Lavery and Joseph Larmarange},
+  title = {{Reproducible Summary Tables with the gtsummary Package}},
+  journal = {{The R Journal}},
+  year = {2021},
+  url = {https://doi.org/10.32614/RJ-2021-053},
+  doi = {10.32614/RJ-2021-053},
+  volume = {13},
+  issue = {1},
+  pages = {570-580},
+}
+
+@Manual{kknn,
+  title = {{kknn: Weighted k-Nearest Neighbors}},
+  author = {Klaus Schliep and Klaus Hechenbichler},
+  year = {2016},
+  note = {R package version 1.3.1},
+  url = {https://CRAN.R-project.org/package=kknn},
+}
+
+@Manual{SuperLearner,
+  title = {{SuperLearner: Super Learner Prediction}},
+  author = {Eric Polley and Erin LeDell and Chris Kennedy and Mark {van der Laan}},
+  year = {2024},
+  note = {R package version 2.0-29},
+  url = {https://CRAN.R-project.org/package=SuperLearner},
+}
+
+@Article{tidyverse,
+  title = {Welcome to the {tidyverse}},
+  author = {Hadley Wickham and Mara Averick and Jennifer Bryan and Winston Chang and Lucy D'Agostino McGowan and Romain FranÃ§ois and Garrett Grolemund and Alex Hayes and Lionel Henry and Jim Hester and Max Kuhn and Thomas Lin Pedersen and Evan Miller and Stephan Milton Bache and Kirill MÃ¼ller and Jeroen Ooms and David Robinson and Dana Paige Seidel and Vitalie Spinu and Kohske Takahashi and Davis Vaughan and Claus Wilke and Kara Woo and Hiroaki Yutani},
+  year = {2019},
+  journal = {Journal of Open Source Software},
+  volume = {4},
+  number = {43},
+  pages = {1686},
+  doi = {10.21105/joss.01686},
+}
+
+@book{Python,
+ author = {Van Rossum, Guido and Drake, Fred L.},
+ title = {Python 3 Reference Manual},
+ year = {2009},
+ isbn = {1441412697},
+ publisher = {CreateSpace},
+ address = {Scotts Valley, CA}
+} 
+
+
+@Article{numpy,
+  title         = {Array programming with {NumPy}},
+  author        = {Charles R. Harris and K. Jarrod Millman and St{\'{e}}fan J.van der Walt and Ralf Gommers and Pauli Virtanen and DavidCournapeau and Eric Wieser and Julian Taylor and SebastianBerg and Nathaniel J. Smith and Robert Kern and Matti Picusand Stephan Hoyer and Marten H. van Kerkwijk and MatthewBrett and Allan Haldane and Jaime Fern{\'{a}}ndez delR{\'{i}}o and Mark Wiebe and Pearu Peterson and PierreG{\'{e}}rard-Marchant and Kevin Sheppard and Tyler Reddy andWarren Weckesser and Hameer Abbasi and Christoph Gohlke andTravis E. Oliphant},
+  year          = {2020},
+  month         = sep,
+  journal       = {Nature},
+  volume        = {585},
+  number        = {7825},
+  pages         = {357--362},
+  doi           = {10.1038/s41586-020-2649-2},
+  publisher     = {Springer Science and Business Media {LLC}},
+  url           = {https://doi.org/10.1038/s41586-020-2649-2}
+}
+
+@InProceedings{pandas,
+  author    = { {W}es {M}c{K}inney },
+  title     = { {D}ata {S}tructures for {S}tatistical {C}omputing in {P}ython },
+  booktitle = { {P}roceedings of the 9th {P}ython in {S}cience {C}onference },
+  pages     = { 56 - 61 },
+  year      = { 2010 },
+  editor    = { {S}t\'efan van der {W}alt and {J}arrod {M}illman },
+  doi       = { 10.25080/Majora-92bf1922-00a }
+}
+
+@book{van1995python, 
+  title={The Python Library Reference, release 3.8.2},
+  author={Van Rossum, Guido}, 
+  year={2020}, 
+  publisher={Python Software Foundation} 
+}
+
+@misc{tensorflow2015-whitepaper,
+title={ {TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems},
+url={https://www.tensorflow.org/},
+note={Software available from tensorflow.org},
+author={
+    Mart\'{i}n~Abadi and
+    Ashish~Agarwal and
+    Paul~Barham and
+    Eugene~Brevdo and
+    Zhifeng~Chen and
+    Craig~Citro and
+    Greg~S.~Corrado and
+    Andy~Davis and
+    Jeffrey~Dean and
+    Matthieu~Devin and
+    Sanjay~Ghemawat and
+    Ian~Goodfellow and
+    Andrew~Harp and
+    Geoffrey~Irving and
+    Michael~Isard and
+    Yangqing Jia and
+    Rafal~Jozefowicz and
+    Lukasz~Kaiser and
+    Manjunath~Kudlur and
+    Josh~Levenberg and
+    Dandelion~Man\'{e} and
+    Rajat~Monga and
+    Sherry~Moore and
+    Derek~Murray and
+    Chris~Olah and
+    Mike~Schuster and
+    Jonathon~Shlens and
+    Benoit~Steiner and
+    Ilya~Sutskever and
+    Kunal~Talwar and
+    Paul~Tucker and
+    Vincent~Vanhoucke and
+    Vijay~Vasudevan and
+    Fernanda~Vi\'{e}gas and
+    Oriol~Vinyals and
+    Pete~Warden and
+    Martin~Wattenberg and
+    Martin~Wicke and
+    Yuan~Yu and
+    Xiaoqiang~Zheng},
+  year={2015},
+}
+
+@article{sklearn,
+  title={Scikit-learn: Machine learning in Python},
+  author={Pedregosa, Fabian and Varoquaux, Ga{\"e}l and Gramfort, Alexandre and Michel, Vincent and Thirion, Bertrand and Grisel, Olivier and Blondel, Mathieu and Prettenhofer, Peter and Weiss, Ron and Dubourg, Vincent and others},
+  journal={Journal of machine learning research},
+  volume={12},
+  number={Oct},
+  pages={2825--2830},
+  year={2011}
+} 
+
+@InProceedings{VAE2014,
+  title = 	{Stochastic Backpropagation and Approximate Inference in Deep Generative Models},
+  author = 	{Danilo Jimenez Rezende and Shakir Mohamed and Daan Wierstra},
+  booktitle = 	{Proceedings of the 31st International Conference on Machine Learning},
+  pages = 	{1278--1286},
+  year = 	{2014},
+  editor = 	{Eric P. Xing and Tony Jebara},
+  volume = 	{32},
+  number =       {2},
+  series = 	{Proceedings of Machine Learning Research},
+  address = 	{Bejing, China},
+  month = 	{22--24 Jun},
+  publisher =    {PMLR},
+  OPTpdf = 	{http://proceedings.mlr.press/v32/rezende14.pdf},
+  url = 	{http://proceedings.mlr.press/v32/rezende14.html},
+  OPTabstract    = 	{We  marry ideas  from deep  neural networks  and approximate
+                  Bayesian inference  to derive  a generalised class  of deep,
+                  directed generative models, endowed with a new algorithm for
+                  scalable inference and learning.  Our algorithm introduces a
+                  recognition  model  to  represent an  approximate  posterior
+                  distribution and uses this for optimisation of a variational
+                  lower  bound.  We  develop stochastic  backpropagation rules
+                  for  gradient backpropagation  through stochastic  variables
+                  and derive  an algorithm that allows  for joint optimisation
+                  of  the parameters  of both  the generative  and recognition
+                  models.  We demonstrate on several real-world data sets that
+                  by   using   stochastic  backpropagation   and   variational
+                  inference,  we  obtain  models  that are  able  to  generate
+                  realistic samples of data, allow for accurate imputations of
+                  missing data, and provide a useful tool for high-dimensional
+                  data visualisation.}
+}
+
+@inproceedings{VAE2013,
+  author    = {Diederik P. Kingma and Max Welling},
+  editor    = {Yoshua Bengio and Yann LeCun},
+  title     = {{Auto-Encoding Variational Bayes}},
+  booktitle = {2nd International Conference on Learning Representations, {ICLR} 2014,
+               Banff, AB, Canada, April 14-16, 2014, Conference Track Proceedings},
+  year      = {2014},
+  opturl       = {http://arxiv.org/abs/1312.6114},
+  opttimestamp = {Thu, 04 Apr 2019 13:20:07 +0200},
+  optbiburl    = {https://dblp.org/rec/journals/corr/KingmaW13.bib},
+  optbibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@Article{MWC19,
+  author = 	 {Morris, T. P. and White, I. R. and Crowther, M. J.},
+  title = 	 {Using simulation studies to evaluate statistical methods},
+  journal = 	 {Statistics in Medicine},
+  year = 	 {2019},
+  OPTkey = 	 {},
+  volume = 	 {38},
+  OPTnumber = 	 {},
+  OPTpages = 	 {2074--2101},
+  OPTmonth = 	 {},
+  DOI = 	 {DOI: 10.1002/sim.8086},
+  OPTannote = 	 {}
+}
+
+
+
+@inproceedings{goodfellow_generative_2014,
+ author = {Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {Z. Ghahramani and M. Welling and C. Cortes and N. Lawrence and K.Q. Weinberger},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Generative Adversarial Nets},
+ opturl = {https://proceedings.neurips.cc/paper_files/paper/2014/file/5ca3e9b122f61f8f06494c97b1afccf3-Paper.pdf},
+ volume = {27},
+ year = {2014}
+}
+
+
+
+@article{gulrajani_improved_2017,
+	title = {Improved {Training} of {Wasserstein} {GANs}},
+	url = {http://arxiv.org/abs/1704.00028},
+	abstract = {Generative Adversarial Networks (GANs) are powerful generative models, but suffer from training instability. The recently proposed Wasserstein GAN (WGAN) makes progress toward stable training of GANs, but sometimes can still generate only low-quality samples or fail to converge. We find that these problems are often due to the use of weight clipping in WGAN to enforce a Lipschitz constraint on the critic, which can lead to undesired behavior. We propose an alternative to clipping weights: penalize the norm of gradient of the critic with respect to its input. Our proposed method performs better than standard WGAN and enables stable training of a wide variety of GAN architectures with almost no hyperparameter tuning, including 101-layer ResNets and language models over discrete data. We also achieve high quality generations on CIFAR-10 and LSUN bedrooms.},
+	urldate = {2019-07-23},
+	journal = {arXiv:1704.00028 [cs, stat]},
+	author = {Gulrajani, Ishaan and Ahmed, Faruk and Arjovsky, Martin and Dumoulin, Vincent and Courville, Aaron},
+	month = mar,
+	year = {2017},
+	note = {arXiv: 1704.00028},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {arXiv\:1704.00028 PDF:/Users/sandrineboulet/Zotero/storage/DUUVSDUR/Gulrajani et al. - 2017 - Improved Training of Wasserstein GANs.pdf:application/pdf;arXiv.org Snapshot:/Users/sandrineboulet/Zotero/storage/XYHDWLJ5/1704.html:text/html}
+}
+
+
+@InProceedings{Glorot10,
+  title = 	 {Understanding the difficulty of training deep feedforward neural networks},
+  author = 	 {Glorot, Xavier and Bengio, Yoshua},
+  booktitle = 	 {Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {249--256},
+  year = 	 {2010},
+  editor = 	 {Teh, Yee Whye and Titterington, Mike},
+  volume = 	 {9},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Chia Laguna Resort, Sardinia, Italy},
+  month = 	 {13--15 May},
+  publisher =    {PMLR},
+  % pdf = 	 {http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf},
+  url = 	 {https://proceedings.mlr.press/v9/glorot10a.html},
+  % abstract = 	 {Whereas before 2006 it appears that deep multi-layer neural networks were not successfully trained, since then several algorithms have been shown to successfully train them, with experimental results showing the superiority of deeper vs less deep architectures. All these experimental results were obtained with new initialization or training mechanisms. Our objective here is to understand better why standard gradient descent from random initialization is doing so poorly with deep neural networks, to better understand these recent relative successes and help design better algorithms in the future.  We first observe the influence of the non-linear activations functions. We find that the logistic sigmoid activation is unsuited for deep networks with random initialization because of its mean value, which can drive especially the top hidden layer into saturation. Surprisingly, we find that saturated units can move out of saturation by themselves, albeit slowly, and explaining the plateaus sometimes seen when training neural networks. We find that a new non-linearity that saturates less can often be beneficial. Finally, we study how activations and gradients vary across layers and during training, with the idea that training may be more difficult when the singular values of the Jacobian associated with each layer are far from 1.  Based on these considerations, we propose a new initialization scheme that brings substantially faster convergence.}
+}
+
+@article{IWPC,
+author = {{The International Warfarin Pharmacogenetics Consortium}},
+title = {Estimation of the Warfarin Dose with Clinical and Pharmacogenetic Data},
+journal = {New England Journal of Medicine},
+volume = {360},
+number = {8},
+pages = {753-764},
+year = {2009},
+doi = {10.1056/NEJMoa0809329},
+URL = {https://www.nejm.org/doi/full/10.1056/NEJMoa0809329},
+eprint = {https://www.nejm.org/doi/pdf/10.1056/NEJMoa0809329}
+}
+
+@Article{Antikythera,
+  author = 	 {Solly, Meilan},
+  title = 	 {The Real History Behind the Archimedes Dial in ``Indiana Jones and the Dial of Destiny''},
+  journal = 	 {Smithsonian Magazine},
+  year = 	 {2023},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTpages = 	 {},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {},
+  URL = {https://www.smithsonianmag.com/history/the-real-history-behind-archimedes-dial-in-indiana-jones-and-the-dial-of-destiny-180982435/}
+}
+
+
+@Book{Proofs,
+  author = 	 {Aigner, Martin and Ziegler, G{\"u}nter M.},
+    title = 	 {Proofs from {THE BOOK}},
+  publisher = 	 {Springer},
+  year = 	 {2018},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  optaddress = 	 {Berlin},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@article{metropolis1949monte,
+  title={The {M}onte {C}arlo {M}ethod},
+  author={Metropolis, Nicholas and Ulam, Stanislaw},
+  journal={Journal of the {A}merican {S}tatistical {A}ssociation},
+  volume={44},
+  number={247},
+  pages={335--341},
+  year={1949},
+  publisher={Taylor \& Francis}
+}
+
+@Book{Cyrano,
+  author = {Rostand, Edmond},
+  title = {Cyrano de {B}ergerac},
+  publisher = {E. Fasquelle},
+  year = {2005},
+  address = {Paris},
+  URL = {https://gallica.bnf.fr/ark:/12148/bpt6k64960772}
+}
+
+
+@Book{Munchausen,
+  author = 	 {Raspe, Rudolf E.},
+  title = 	 {Aventures du {B}aron de {M}{\"u}nchausen},
+  publisher = 	 {Furne, Jouvet et Cie},
+  year = 	 {1866},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address = 	 {Paris},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  note = 	 {Traduction nouvelle par T.\ Gautier fils; illustrées par G.\ Doré},
+  OPTannote = 	 {},
+  URL = {https://gallica.bnf.fr/ark:/12148/bpt6k6582615r}
+}
+
+@book{Walton,
+  title={Mimesis as make-believe: {O}n the foundations of the representational arts},
+  author={Walton, Kendall L.},
+  year={1993},
+  publisher={Harvard University Press}
+}
+
+
+
+@Article{Carruthers,
+  author = 	 {Carruthers, Peter},
+  title =  	 {Human Creativity:  Its Cognitive Basis, its  Evolution, and
+                  its Connections with Childhood Pretence},
+  journal = 	 {British Journal for the Philosophy of Science},
+  year = 	 {2002},
+  OPTkey = 	 {},
+  volume = 	 {53},
+  OPTnumber = 	 {},
+  pages = 	 {225--249},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+
+
+@Article{Barberousse,
+  author = 	 {Barberousse, Anouk and Ludwig, Pascal},
+  title = 	 {Les modèles comme fiction},
+  journal = 	 {Philosophie},
+  year = 	 {2000},
+  OPTkey = 	 {},
+  volume = 	 {68},
+  OPTnumber = 	 {},
+  pages = 	 {16--43},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@Book{Jaccottet,
+  author = 	 {Homère},
+  title = 	 {L'{O}dyssée},
+  publisher = 	 {La Découverte},
+  year = 	 {2000},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address = 	 {Paris},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  note = 	 {Traduction de P.\ Jaccottet},
+  OPTannote = 	 {}
+}
+
+@Book{Shelley,
+  author = 	 {Shelley, Mary},
+  title = 	 {Frankenstein; or, {T}he {M}odern {P}rometheus},
+  publisher = 	 {Lackington, Hughes, Harding, Marvor \& Jones},
+  year = 	 {1818},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address = 	 {London},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@Book{Platon,
+  author = 	 {Platon},
+  title = 	 {La {R}épublique},
+  publisher = 	 {Flammarion},
+  year = 	 {2002},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address = 	 {Paris},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  note = 	 {Traduction de G.\ Leroux},
+  OPTannote = 	 {}
+}
+
+@Book{Aristote,
+  author = 	 {Aristote},
+  title = 	 {Poétique},
+  publisher = 	 {Édition {M}ille et une nuits},
+  year = 	 {2006},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address = 	 {Paris},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  note = 	 {Traduction de O.\ Bellevenue et S.\ Auffret},
+  OPTannote = 	 {}
+}
+
+@Book{Bacon,
+  author = 	 {Bacon, Francis},
+  title = 	 {Novum Organum 1620},
+  publisher = 	 {{Parry & MacMillan}},
+  year = 	 {1854},
+  OPTkey = 	 {},
+  volume = 	 {3},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address = 	 {Philadelphia},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  note = 	 {Scanned by A.\ Waugh and proofread by M.\ Banas in 1996; proofread and page numbers added by J.\ Perry, March 2001},
+  OPTannote = 	 {},
+  url = {https://history.hanover.edu/texts/bacon/novorg.html}
+}
+
+
+@Book{St-Ex,
+  author = 	 {{de Saint-Exupéry}, Antoine},
+    title = 	 {Le {P}etit {P}rince},
+  publisher = 	 {Reynal \& Hitchcock},
+  year = 	 {1943},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address = 	 {New-York},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@Book{Pearl,
+  author = 	 {Pearl, Judea and Mackenzie, Dana},
+  title = 	 {The Book of Why: The New Science of Cause and Effect},
+  publisher = 	 {Basic Books},
+  year = 	 {2018},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address = 	 {New-York},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@inproceedings{choromanska2015loss,
+  title={The loss surfaces of multilayer networks},
+  author={Choromanska, Anna and Henaff, Mikael and Mathieu, Michael and Arous, G{\'e}rard Ben and LeCun, Yann},
+  booktitle={Artificial intelligence and statistics},
+  pages={192--204},
+  year={2015},
+  organization={PMLR}
+}
+
+@inproceedings{arora2018optimization,
+  title={On the optimization of deep networks: Implicit acceleration by overparameterization},
+  author={Arora, Sanjeev and Cohen, Nadav and Hazan, Elad},
+  booktitle={International Conference on Machine Learning},
+  pages={244--253},
+  year={2018},
+  organization={PMLR}
+}
+
+@book{Lauritzen,
+  AUTHOR = {Lauritzen, Steffen L.},
+  TITLE = {Graphical models},
+  SERIES = {Oxford Statistical Science Series},
+  VOLUME = {17},
+  NOTE = {Oxford Science Publications},
+  PUBLISHER = {The Clarendon Press, Oxford University Press, New York},
+  YEAR = {1996},
+  PAGES = {x+298},
+  ISBN = {0-19-852219-3},
+}
+
+@book{vdV98,
+  AUTHOR = {{van der Vaart}, Aad W.},
+  TITLE = {Asymptotic statistics},
+  SERIES = {Cambridge Series in Statistical and Probabilistic Mathematics},
+  VOLUME = {3},
+  PUBLISHER = {Cambridge University Press, Cambridge},
+  YEAR = {1998},
+  PAGES = {xvi+443}
+}
+
+@Book{Tokarczuk,
+  author = 	 {Tokarczuk, Olga},
+    title = 	 {The books of {J}acob},
+  publisher = 	 {The Text Publishing Company},
+  year = 	 {2021},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address = 	 {Melbourne},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  note = 	 {Translated by J. Croft},
+  OPTannote = 	 {}
+}
+
+
+
+
+@article{yi_2019, 
+title = {Generative adversarial network in medical imaging: {A} review},
+journal = {Medical Image Analysis},
+volume = {58},
+pages = {101552},
+year = {2019},
+optissn = {1361-8415},
+doi = {https://doi.org/10.1016/j.media.2019.101552},
+opturl = {https://www.sciencedirect.com/science/article/pii/S1361841518308430},
+author = {Xin Yi and Ekta Walia and Paul Babyn},
+optkeywords = {Deep learning, Generative adversarial network, Generative model, Medical imaging, Review},
+optabstract = {Generative adversarial networks have gained a lot of attention in the computer vision community due to their capability of data generation without explicitly modelling the probability density function. The adversarial loss brought by the discriminator provides a clever way of incorporating unlabeled samples into training and imposing higher order consistency. This has proven to be useful in many cases, such as domain adaptation, data augmentation, and image-to-image translation. These properties have attracted researchers in the medical imaging community, and we have seen rapid adoption in many traditional and novel applications, such as image reconstruction, segmentation, detection, classification, and cross-modality synthesis. Based on our observations, this trend will continue and we therefore conducted a review of recent advances in medical imaging using the adversarial training scheme with the hope of benefiting researchers interested in this technique.}
+}
+
+@inproceedings{vondrick_2016,
+author = {Vondrick, Carl and Pirsiavash, Hamed and Torralba, Antonio},
+title = {Generating videos with scene dynamics},
+year = {2016},
+optisbn = {9781510838819},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+optabstract = {We capitalize on large amounts of unlabeled video in order to learn a model of scene dynamics for both video recognition tasks (e.g. action classification) and video generation tasks (e.g. future prediction). We propose a generative adversarial network for video with a spatio-temporal convolutional architecture that untangles the scene's foreground from the background. Experiments suggest this model can generate tiny videos up to a second at full frame rate better than simple baselines, and we show its utility at predicting plausible futures of static images. Moreover, experiments and visualizations show the model internally learns useful features for recognizing actions with minimal supervision, suggesting scene dynamics are a promising signal for representation learning. We believe generative video models can impact many applications in video understanding and simulation.},
+booktitle = {Proceedings of the 30th International Conference on Neural Information Processing Systems},
+pages = {613--621},
+numpages = {9},
+location = {Barcelona, Spain},
+series = {NIPS'16}
+}
+
+@article{lee_2018, 
+   title={Natural language generation for electronic health records},
+   volume={1},
+   optISSN={2398-6352},
+   opturl={http://dx.doi.org/10.1038/s41746-018-0070-0},
+   DOI={10.1038/s41746-018-0070-0},
+   number={1},
+   journal={npj Digital Medicine},
+   publisher={Springer Science and Business Media LLC},
+   author={Lee, Scott H.},
+   year={2018},
+   month={nov}
+}
+
+@article{baowaly_2018, 
+  title={Synthesizing electronic health records using improved generative adversarial networks},
+  author={Mrinal Kanti Baowaly and Chia-Ching Lin and Chao-Lin Liu and Kuan-Ta Chen},
+  journal={Journal of the American Medical Informatics Association},
+  year={2018},
+  volume={26},
+  pages={228-241},
+  opturl={https://api.semanticscholar.org/CorpusID:54479855}
+}
+
+@INPROCEEDINGS{che_2017,
+  author={Che, Zhengping and Cheng, Yu and Zhai, Shuangfei and Sun, Zhaonan and Liu, Yan},
+  booktitle={2017 IEEE International Conference on Data Mining (ICDM)},
+  title={Boosting Deep Learning Risk Prediction with Generative Adversarial Networks for Electronic Health Records},
+  year={2017},
+  volume={},
+  number={},
+  pages={787--792},
+  optkeywords={Generators;Data models;Predictive models;Gallium nitride;Training;Medical services;Machine learning;electronic health record;generative adversarial network;health care;deep learning},
+  doi={10.1109/ICDM.2017.93}
+}
+
+
+@InProceedings{choi_2017, 
+  title = 	 {Generating Multi-label Discrete Patient Records using Generative Adversarial Networks},
+  author = 	 {Choi, Edward and Biswal, Siddharth and Malin, Bradley and Duke, Jon and Stewart, Walter F. and Sun, Jimeng},
+  booktitle = 	 {Proceedings of the 2nd Machine Learning for Healthcare Conference},
+  pages = 	 {286--305},
+  year = 	 {2017},
+  editor = 	 {Doshi-Velez, Finale and Fackler, Jim and Kale, David and Ranganath, Rajesh and Wallace, Byron and Wiens, Jenna},
+  volume = 	 {68},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {18--19 Aug},
+  publisher =    {PMLR},
+  optpdf = 	 {http://proceedings.mlr.press/v68/choi17a/choi17a.pdf},
+  url = 	 {https://proceedings.mlr.press/v68/choi17a.html},
+  optabstract = 	 {Access to electronic health record (EHR) data has motivated computational advances in medical research. However, various concerns, particularly over privacy, can limit access to and collaborative use of EHR data. Sharing synthetic EHR data could mitigate risk. In this paper, we propose a new approach, medical Generative Adversarial Network (medGAN), to generate realistic synthetic patient records. Based on input real patient records, medGAN can generate high-dimensional discrete variables (e.g., binary and count features) via a combination of an autoencoder and generative adversarial networks. We also propose minibatch averaging to efficiently avoid mode collapse, and increase the learning efficiency with batch normalization and shortcut connections. To demonstrate feasibility, we showed that medGAN generates synthetic patient records that achieve comparable performance to real data on many experiments including distribution statistics, predictive modeling tasks and a medical expert review. We also empirically observe a limited privacy risk in both identity and attribute disclosure using medGAN.}
+}
+
+
+@article{gui_2020,
+  author={Gui, Jie and Sun, Zhenan and Wen, Yonggang and Tao, Dacheng and Ye, Jieping},
+  journal={IEEE Transactions on Knowledge and Data Engineering}, 
+  title={A Review on Generative Adversarial Networks: Algorithms, Theory, and Applications}, 
+  year={2023},
+  volume={35},
+  number={4},
+  pages={3313-3332},
+  optkeywords={Generators;Generative adversarial networks;Data models;Linear programming;Natural language processing;Machine learning algorithms;Inference algorithms;Deep learning;generative adversarial networks;algorithm;theory;applications},
+  doi={10.1109/TKDE.2021.3130191}
+  }
+
+@ARTICLE{creswell_2017,
+author={Creswell, Antonia and White, Tom and Dumoulin, Vincent and Arulkumaran, Kai and Sengupta, Biswa and Bharath, Anil A.},
+journal={IEEE Signal Processing Magazine},
+title={{Generative Adversarial Networks: An Overview}},
+year={2018},
+volume={35},
+number={1},
+pages={53--65},
+optkeywords={Machine learning;Generators;Training data;Data models;Convolutional codes;Image resolution;Signal resolution;Semantics},
+doi={10.1109/MSP.2017.2765202}
+} 
+
+
+
+
+@article{figueira_2022,
+AUTHOR = {Figueira, Alvaro and Vaz, Bruno},
+TITLE = {Survey on Synthetic Data Generation, Evaluation Methods and {GAN}s},
+JOURNAL = {Mathematics},
+VOLUME = {10},
+YEAR = {2022},
+NUMBER = {15},
+optARTICLE-NUMBER = {2733},
+optURL = {https://www.mdpi.com/2227-7390/10/15/2733},
+optISSN = {2227-7390},
+optABSTRACT = {Synthetic data consists of artificially generated data. When data are scarce, or of poor quality, synthetic data can be used, for example, to improve the performance of machine learning models. Generative adversarial networks (GANs) are a state-of-the-art deep generative models that can generate novel synthetic samples that follow the underlying data distribution of the original dataset. Reviews on synthetic data generation and on GANs have already been written. However, none in the relevant literature, to the best of our knowledge, has explicitly combined these two topics. This survey aims to fill this gap and provide useful material to new researchers in this field. That is, we aim to provide a survey that combines synthetic data generation and GANs, and that can act as a good and strong starting point for new researchers in the field, so that they have a general overview of the key contributions and useful references. We have conducted a review of the state-of-the-art by querying four major databases: Web of Sciences (WoS), Scopus, IEEE Xplore, and ACM Digital Library. This allowed us to gain insights into the most relevant authors, the most relevant scientific journals in the area, the most cited papers, the most significant research areas, the most important institutions, and the most relevant GAN architectures. GANs were thoroughly reviewed, as well as their most common training problems, their most important breakthroughs, and a focus on GAN architectures for tabular data. Further, the main algorithms for generating synthetic data, their applications and our thoughts on these methods are also expressed. Finally, we reviewed the main techniques for evaluating the quality of synthetic data (especially tabular data) and provided a schematic overview of the information presented in this paper.},
+DOI = {10.3390/math10152733}
+}
+
+
+
+@article{aggarwal_2021, 
+title = {Generative adversarial network: An overview of theory and applications},
+journal = {International Journal of Information Management Data Insights},
+volume = {1},
+number = {1},
+pages = {100004},
+year = {2021},
+optissn = {2667-0968},
+doi = {https://doi.org/10.1016/j.jjimei.2020.100004},
+opturl = {https://www.sciencedirect.com/science/article/pii/S2667096820300045},
+author = {Alankrita Aggarwal and Mamta Mittal and Gopi Battineni},
+optkeywords = {GAN, Deep learning, Image mining, Big data, Literature review, Neural networks},
+optabstract = {In recent times, image segmentation has been involving everywhere including disease diagnosis to autonomous vehicle driving. In computer vision, this image segmentation is one of the vital works and it is relatively complicated than other vision undertakings as it needs low-level spatial data. Especially, Deep Learning has impacted the field of segmentation incredibly and gave us today different successful models. The deep learning associated Generated Adversarial Networks (GAN) has presenting remarkable outcomes on image segmentation. In this study, the authors have presented a systematic review analysis on recent publications of GAN models and their applications. Three libraries such as Embase (Scopus), WoS, and PubMed have been considered for searching the relevant papers available in this area. Search outcomes have identified 2084 documents, after two-phase screening 52 potential records are included for final review. The following applications of GAN have been emerged: 3D object generation, medicine, pandemics, image processing, face detection, texture transfer, and traffic controlling. Before 2016, research in this field was limited and thereafter its practical usage came into existence worldwide. The present study also envisions the challenges associated with GAN and paves the path for future research in this realm.}
+}
+
+@inbook{xu_2019,
+author = {Xu, Lei and Skoularidou, Maria and Cuesta-Infante, Alfredo and Veeramachaneni, Kalyan},
+title = {Modeling tabular data using conditional {GAN}},
+year = {2019},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+optabstract = {Modeling the probability distribution of rows in tabular data and generating realistic synthetic data is a non-trivial task. Tabular data usually contains a mix of discrete and continuous columns. Continuous columns may have multiple modes whereas discrete columns are sometimes imbalanced making the modeling difficult. Existing statistical and deep neural network models fail to properly model this type of data. We design CTGAN, which uses a conditional generator to address these challenges. To aid in a fair and thorough comparison, we design a benchmark with 7 simulated and 8 real datasets and several Bayesian network baselines. CTGAN outperforms Bayesian methods on most of the real datasets whereas other deep learning methods could not.},
+booktitle = {Proceedings of the 33rd International Conference on Neural Information Processing Systems},
+articleno = {659},
+numpages = {11}
+}
+
+@article{kocaoglu_2017,
+  author       = {Murat Kocaoglu and Christopher Snyder and Alexandros G. Dimakis and Sriram Vishwanath},
+  title        = {{CausalGAN}: Learning Causal Implicit Generative Models with Adversarial Training},
+  journal      = {CoRR},
+  volume       = {abs/1709.02023},
+  year         = {2017},
+  url          = {http://arxiv.org/abs/1709.02023},
+  eprinttype    = {arXiv},
+  eprint       = {1709.02023},
+  opttimestamp    = {Mon, 13 Aug 2018 16:46:29 +0200},
+  optbiburl       = {https://dblp.org/rec/journals/corr/abs-1709-02023.bib},
+  optbibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{athey_2024, 
+title = {Using {W}asserstein Generative Adversarial Networks for the design of {M}onte {C}arlo simulations},
+journal = {Journal of Econometrics},
+volume = {240},
+number = {2},
+pages = {105076},
+year = {2024},
+optissn = {0304-4076},
+doi = {https://doi.org/10.1016/j.jeconom.2020.09.013},
+opturl = {https://www.sciencedirect.com/science/article/pii/S0304407621000440},
+author = {Susan Athey and Guido W. Imbens and Jonas Metzger and Evan Munro},
+optabstract = {When researchers develop new econometric methods it is common practice to compare the performance of the new methods to those of existing methods in Monte Carlo studies. The credibility of such Monte Carlo studies is often limited because of the discretion the researcher has in choosing the Monte Carlo designs reported. To improve the credibility we propose using a class of generative models that has recently been developed in the machine learning literature, termed Generative Adversarial Networks (GANs) which can be used to systematically generate artificial data that closely mimics existing datasets. Thus, in combination with existing real data sets, GANs can be used to limit the degrees of freedom in Monte Carlo study designs for the researcher, making any comparisons more convincing. In addition, if an applied researcher is concerned with the performance of a particular statistical method on a specific data set (beyond its theoretical properties in large samples), she can use such GANs to assess the performance of the proposed method, e.g. the coverage rate of confidence intervals or the bias of the estimator, using simulated data which closely resembles the exact setting of interest. To illustrate these methods we apply Wasserstein GANs (WGANs) to the estimation of average treatment effects. In this example, we find that (i) there is not a single estimator that outperforms the others in all three settings, so researchers should tailor their analytic approach to a given setting, (ii) systematic simulation studies can be helpful for selecting among competing methods in this situation, and (iii) the generated data closely resemble the actual data.}
+}
+
+@InProceedings{arjovsky_2017, 
+  title = 	 {{W}asserstein Generative Adversarial Networks},
+  author =       {Martin Arjovsky and Soumith Chintala and L{\'e}on Bottou},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {214--223},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Aug},
+  publisher =    {PMLR},
+  optpdf = 	 {http://proceedings.mlr.press/v70/arjovsky17a/arjovsky17a.pdf},
+  opturl = 	 {https://proceedings.mlr.press/v70/arjovsky17a.html},
+  optabstract = 	 {We introduce a new algorithm named WGAN, an alternative to traditional GAN training. In this new model, we show that we can improve the stability of learning, get rid of problems like mode collapse, and provide meaningful learning curves useful for debugging and hyperparameter searches. Furthermore, we show that the corresponding optimization problem is sound, and provide extensive theoretical work highlighting the deep connections to different distances between distributions.}
+}
+
+@inproceedings{gulrajani_2017,
+ author = {Gulrajani, Ishaan and Ahmed, Faruk and Arjovsky, Martin and Dumoulin, Vincent and Courville, Aaron C},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Improved Training of Wasserstein GANs},
+ opturl = {https://proceedings.neurips.cc/paper_files/paper/2017/file/892c3b1c6dccd52936e27cbd0ff683d6-Paper.pdf},
+ volume = {30},
+ year = {2017}
+}
+
+@misc{neal_2020,
+      title={RealCause: Realistic Causal Inference Benchmarking}, 
+      author={Brady Neal and Chin-Wei Huang and Sunand Raghupathi},
+      year={2021},
+      eprint={2011.15007},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2011.15007}, 
+}
+
+
+@InProceedings{parikh_2022,
+  title = 	 {Validating Causal Inference Methods},
+  author =       {Parikh, Harsh and Varjao, Carlos and Xu, Louise and Tchetgen, Eric Tchetgen},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {17346--17358},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  optpdf = 	 {https://proceedings.mlr.press/v162/parikh22a/parikh22a.pdf},
+  opturl = 	 {https://proceedings.mlr.press/v162/parikh22a.html},
+  optabstract = 	 {The fundamental challenge of drawing causal inference is that counterfactual outcomes are not fully observed for any unit. Furthermore, in observational studies, treatment assignment is likely to be confounded. Many statistical methods have emerged for causal inference under unconfoundedness conditions given pre-treatment covariates, including propensity score-based methods, prognostic score-based methods, and doubly robust methods. Unfortunately for applied researchers, there is no ‘one-size-fits-all’ causal method that can perform optimally universally. In practice, causal methods are primarily evaluated quantitatively on handcrafted simulated data. Such data-generative procedures can be of limited value because they are typically stylized models of reality. They are simplified for tractability and lack the complexities of real-world data. For applied researchers, it is critical to understand how well a method performs for the data at hand. Our work introduces a deep generative model-based framework, Credence, to validate causal inference methods. The framework’s novelty stems from its ability to generate synthetic data anchored at the empirical distribution for the observed sample, and therefore virtually indistinguishable from the latter. The approach allows the user to specify ground truth for the form and magnitude of causal effects and confounding bias as functions of covariates. Thus simulated data sets are used to evaluate the potential performance of various causal estimation methods when applied to data similar to the observed sample. We demonstrate Credence’s ability to accurately assess the relative performance of causal estimation techniques in an extensive simulation study and two real-world data applications from Lalonde and Project STAR studies.}
+}
+
+@misc{lu_2024,
+      title={Machine Learning for Synthetic Data Generation: A Review}, 
+      author={Yingzhou Lu and Minjie Shen and Huazheng Wang and Xiao Wang and Capucine van Rechem and Tianfan Fu and Wenqi Wei},
+      year={2024},
+      eprint={2302.04062},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2302.04062}, 
+}
+
+
+@misc{alaa_2022,
+      title={{How Faithful is your Synthetic Data? Sample-level Metrics for Evaluating and Auditing Generative Models}}, 
+      author={Ahmed M. Alaa and Boris van Breugel and Evgeny Saveliev and Mihaela van der Schaar},
+      year={2022},
+      eprint={2102.08921},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2102.08921}, 
 }
 
