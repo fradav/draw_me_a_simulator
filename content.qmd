@@ -3193,7 +3193,20 @@ architectural modifications, a conditional generator, and training-by-sampling
 to improve performance. Additionally,  they introduced the Tabular Variational
 Auto-Encoder (TVAE) for mixed-type tabular data generation.
 
-In  a  causal  framework,  @kocaoglu_2017  proposed  an  adversarial  training
+Inspired by  a randomized  controlled trial  (RCT) in  the treatment  of Human
+Immunodeficiency Virus  (HIV), @petrakos_2025 recently conducted  an empirical
+comparison of several  strategies and two data generation  techniques aimed at
+generating  synthetic  tabular  RCT   data  while  preserving  the  underlying
+multivariate  data distribution.   One of  these techniques  was based  on the
+aforementioned CTGAN, and the other  on a more traditional statistical method.
+Their  findings  indicate that  the  most  effective approach  for  generating
+synthetic  RCT data  involves a  sequential generation  process. This  process
+begins with an R-vine copula model to generate baseline variables, followed by
+a  simple random  treatment allocation  to simulate  the RCT  environment, and
+concludes with  regression models  for post-treatment  variables, such  as the
+trial outcome.
+
+In a causal framework, @kocaoglu_2017 proposed an adversarial training
 procedure  to learn  a causal  implicit generative  model for  a given  causal
 graph. They demonstrated  that when the generator's structure  aligns with the
 causal  graph,   GANs  can   effectively  train  causal   implicit  generative
@@ -3211,9 +3224,9 @@ GANs to  generate synthetic data that  mimic genuine data, aimed  at assessing
 the performance  of statistical methods.   To illustrate their  approach, they
 employed WGANs to generate the covariates $(V,W)$ conditional on the treatment
 $A$, followed by  the outcome variable $Y$ conditional on  $A$.  The resulting
-synthetic data were used to estimate average treatment effects.
+synthetic data were used to estimate average treatment effects. 
 
-@neal_2020 presented RealCause, an  alternative approach to simulate realistic
+@neal_2020 presented RealCause, an alternative approach to simulate realistic
 data using neural  networks.  Unlike our approach, they  first sampled $(V,W)$
 directly  from   the  genuine  data   and  then  generated  samples   for  $A$
 (conditionally on $(W,V)$) and $Y$ (conditionally on $(A,W,V)$).
