@@ -1,1 +1,1 @@
-sudo apt-get install -y libcurl4-openssl-dev libglpk-dev libxml2-dev
+sudo apt-get install -y libcurl4-openssl-dev libglpk-dev

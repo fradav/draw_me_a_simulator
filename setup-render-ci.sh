@@ -1,1 +1,1 @@
-sudo apt-get install -y cowsay boxes
+sudo apt-get install -y cowsay boxes libglpk-dev
