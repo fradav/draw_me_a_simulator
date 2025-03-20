@@ -9,6 +9,9 @@ on:
   pull_request:
     branches: ["main","master"]
 
+permissions:
+  id-token: write
+  
 jobs:
   call_env_workflow:
     uses: computorg/workflows/.github/workflows/global-env.yml@main
