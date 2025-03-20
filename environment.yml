@@ -4,5 +4,5 @@ channels:
 dependencies:
   - python=3.12
   - pip :
-    - -r pip-requirements.txt
+    - -r requirements.txt
 
