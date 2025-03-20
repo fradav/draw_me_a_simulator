@@ -1,1 +1,1 @@
-sudo apt-get install -y libcurl4-openssl-dev cowsay
+sudo apt-get install -y libcurl4-openssl-dev igraph
