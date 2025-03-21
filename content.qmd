@@ -1060,6 +1060,8 @@ numbers of  layers and of neurons  in each layer, respectively.  The parameter
 ```{python building-encoder}
 #| message: false
 #| warning: false
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import tensorflow as tf
 from tensorflow.keras import Input, Model
 from tensorflow.keras.layers import Lambda, Dense, Activation, concatenate,\
