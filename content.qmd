@@ -45,7 +45,7 @@ format:
 [![build status](https://github.com/computorg/{{< meta repo >}}/workflows/build/badge.svg)](https://github.com/computorg/{{< meta repo >}})
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
 
-::: {.hidden}
+::: {.content-hidden}
 \(
 \newcommand{\bbR}{\mathbb{R}}
 \newcommand{\calA}{\mathcal{A}}
@@ -77,19 +77,8 @@ format:
 \)
 :::
 
-<blockquote class="blockquote"> 
-	<p class="mb-0"> 
-	
-	Asher Rubin walks
-out of the  starosta's home and heads toward the  market square. With evening,
-the sky has cleared,  and now a million stars are shining,  but their light is
-cold and brings down a frost upon  the earth, upon Rohatyn.  The first of this
-autumn. Rubin pulls his black wool coat  tighter around him; tall and thin, he
-looks like a vertical line. 
-
+> Asher Rubin walks out of the starosta's home and heads toward the market square. With evening, the sky has cleared, and now a million stars are shining, but their light is cold and brings down a frost upon the earth, upon Rohatyn. The first of this autumn. Rubin pulls his black wool coat tighter around him; tall and thin, he looks like a vertical line. 
 [@Tokarczuk, I(3)]
-	</p> 
-</blockquote> 
 
 # Introduction
 
@@ -478,6 +467,7 @@ will be used for testing.
 
 ```{python simulation}
 #| echo: true
+import random
 random.seed(54321)
 dimV,  dimW = 2, 3
 n_train = int(5e3)
@@ -1545,7 +1535,7 @@ functions   follow  straightforwardly   from  the   equations.   As   for  the
 optimization algorithm, we  rely on the minibatch  stochastic ascent algorithm
 presented below:
 
-```{pseudocode}
+```pseudocode
 #| label: alg-sgd
 #| html-indent-size: "1.2em"
 #| html-comment-delimiter: "//"
@@ -1557,25 +1547,25 @@ presented below:
 \begin{algorithm}
 \caption{Minibatch stochastic gradient ascent training.}
 \begin{algorithmic}
-  \REQUIRE number of epochs EPOCH, batch  size $m$, number of repetitions $L$,
+  \Require number of epochs EPOCH, batch  size $m$, number of repetitions $L$,
   learning rate $\alpha$, exponential decay  rates $\beta_1$ and $\beta_2$ for
   the  1st  and 2nd  moments  estimates,  small constant  $\epsilon$,  initial
   parameter    $\theta^{(0)}   =    (\theta_1^{(0)},   \theta_2^{(0)})    \in
   \Theta$
-  \STATE Initialize $D \leftarrow \{O_{1}, \ldots, O_{n}\}$
-  \STATE Initialize $t \leftarrow 0$, $\text{first}^{(0)} \leftarrow 0_{\mathbb{R}^{\dim(\Theta)}}$, $\text{second}^{(0)} \leftarrow 0_{\mathbb{R}^{\dim(\Theta)}}$
-  \WHILE{$t<$ EPOCH}
-  \STATE Sample uniformly without replacement a minibatch of $m$ genuine observations
+  \State Initialize $D \leftarrow \{O_{1}, \ldots, O_{n}\}$
+  \State Initialize $t \leftarrow 0$, $\text{first}^{(0)} \leftarrow 0_{\mathbb{R}^{\dim(\Theta)}}$, $\text{second}^{(0)} \leftarrow 0_{\mathbb{R}^{\dim(\Theta)}}$
+  \While{$t<$ EPOCH}
+  \State Sample uniformly without replacement a minibatch of $m$ genuine observations
   $\tilde{O}_{1}, \ldots, \tilde{O}_{m}$ from $D$
-  \STATE  Sample  a  minibatch  of   $m \times L$  independent  sources  of  randomness $Z_{1,1}, \ldots, Z_{1,L}, Z_{2,1},\ldots, Z_{2,L}, \dots, Z_{m,1},\ldots, Z_{m,L}$ from $(\mathcal N(0,1))^{\otimes d}$
-    \FOR{$i=1,\cdots,m$}
-		\STATE  Compute  $\mathop{\mathrm{Enc}}_{\theta_{1}^{(t)}} (\tilde{O}_{i},  Z_{1,1})  =
+  \State  Sample  a  minibatch  of   $m \times L$  independent  sources  of  randomness $Z_{1,1}, \ldots, Z_{1,L}, Z_{2,1},\ldots, Z_{2,L}, \dots, Z_{m,1},\ldots, Z_{m,L}$ from $(\mathcal N(0,1))^{\otimes d}$
+    \For{$i=1,\cdots,m$}
+		\State  Compute  $\mathop{\mathrm{Enc}}_{\theta_{1}^{(t)}} (\tilde{O}_{i},  Z_{1,1})  =
 		((\mu_i)^{(t)}, (\sigma^2_i)^{(t)}, Z_{1,1})$
-		\FOR{$\ell=1,\cdots,L$}
-			\STATE $U_{i,\ell} \leftarrow (\mu_i)^{(t)} + \sqrt{(\sigma^2_i)^{(t)}} \odot (Z_{i,\ell}^{(1)},\cdots,Z_{i,\ell}^{(d)})$
-		\ENDFOR
-	\ENDFOR
-    \STATE Update the encoder and decoder by performing one step of stochastic
+		\For{$\ell=1,\cdots,L$}
+			\State $U_{i,\ell} \leftarrow (\mu_i)^{(t)} + \sqrt{(\sigma^2_i)^{(t)}} \odot (Z_{i,\ell}^{(1)},\cdots,Z_{i,\ell}^{(d)})$
+		\EndFor
+	\EndFor
+    \State Update the encoder and decoder by performing one step of stochastic
 	gradient ascent:\\
 
     $g     \leftarrow    \nabla_{\theta}     \left.\left\{\dfrac{1}{m}\sum_{i=1}^{m}
@@ -1601,8 +1591,8 @@ presented below:
     $\theta^{(t+1)}        \leftarrow       \theta^{(t)}        +       \alpha
 	\dfrac{\widehat{\text{first}}^{(t+1)}}{\sqrt{\widehat{\text{second}}^{(t+1)}}+\epsilon}$ \\
 
-  \STATE Update $t \leftarrow t+1$
-  \ENDWHILE
+  \State Update $t \leftarrow t+1$
+  \EndWhile
 \end{algorithmic}
 \end{algorithm}
 ```
