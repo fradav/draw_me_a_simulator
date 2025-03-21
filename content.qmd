@@ -1058,6 +1058,8 @@ numbers of  layers and of neurons  in each layer, respectively.  The parameter
 `L` will be discussed later.
 
 ```{python building-encoder}
+#| message: false
+#| warning: false
 import tensorflow as tf
 from tensorflow.keras import Input, Model
 from tensorflow.keras.layers import Lambda, Dense, Activation, concatenate,\
